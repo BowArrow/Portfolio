@@ -1,8 +1,11 @@
-#stars {
+#pullUp {
   margin-top: -1000px;
   left: 0px;
   position: absolute;
   z-index: -1;
+  height: 100vh;
+
+
 }
 
 .rippleDiv{
