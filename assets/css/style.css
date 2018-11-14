@@ -1,4 +1,18 @@
 #stars {
+  margin-top: -1000px;
+  left: 0px;
   position: absolute;
   z-index: -1;
+}
+
+.rippleDiv{
+  background-image: url(../images/Background.jpg);
+  background-size: cover;
+  height: 100vh;
+  background: transparent;
+}
+
+.stars {
+  position: absolute;
+  z-index: 1;
 }
