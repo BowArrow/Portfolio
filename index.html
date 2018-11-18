@@ -13,13 +13,24 @@
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/stars.css">
     <!-- Google Font -->
-    <link href="https://fonts.googleapis.com/css?family=Poor+Story:400,700" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
 
     <title>Portfolio</title>
 </head>
 
 <body>
     <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="rounded" id="page-links">
+                    <div id="links">
+                        <h1 class="noselect" id="about" data-toggle="modal" data-target="#aboutModal"><span>About Me</span></h1>
+                        <h1 class="noselect" id="portfolio" data-toggle="modal" data-target="#portfolioModal">Portfolio</h1>
+                        <h1 class="noselect" id="contact" data-toggle="modal" data-target="#contactModal">Contact</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
         <div class="row">
             <div class="col-md-12">
                 <div class="rippleDiv"></div>
@@ -39,8 +50,74 @@
                 </div>
             </div>
         </div>
+
+        <!-- Modal -->
+        <div class="modal fade" id="aboutModal" tabindex="-1" role="dialog" aria-labelledby="aboutLabel"
+            aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="aboutLabel">Modal title</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        ...
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Save changes</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal -->
+        <div class="modal fade" id="portfolioModal" tabindex="-1" role="dialog" aria-labelledby="portfolioLabel"
+            aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="portfolioLabel">Modal title</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="row" id ="porfolioLinks">
+
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal -->
+        <div class="modal fade" id="contactModal" tabindex="-1" role="dialog" aria-labelledby="contactLabel"
+            aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="contactLabel">Modal title</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        ...
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Save changes</button>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-            
+
 
     <!-- Dynamic page with animations -->
     <!-- starting page will have "Enter Button" surrounded by interactive background -->
@@ -65,6 +142,7 @@
     <!-- Code to the JavaScript File -->
     <script src="assets/javascript/app.js"></script>
     <script src="assets/javascript/jquery.ripples-min.js"></script>
+    <script src="assets/javascript/firebase.js"></script>
 
 </body>
 

@@ -1,11 +1,52 @@
+body {
+  font-family: 'Quicksand', sans-serif;
+  color: white;
+}
+
 #pullUp {
   margin-top: -1000px;
   left: 0px;
   position: absolute;
   z-index: -1;
   height: 100vh;
+}
 
+#page-links {
+  position: absolute;
+  z-index: 2;
+  margin: 0 auto;
+  margin-left: 40vw;
+  margin-top: 40vh;
+  width: 200px;
+  height: auto;
+  text-align: center;
 
+}
+
+#page-links h1 {
+  background-color: transparent;
+  opacity: 1;
+  -o-transition:.5s;
+  -ms-transition:.5s;
+  -moz-transition:.5s;
+  -webkit-transition:.5s;
+  transition: .5s;
+}
+
+#page-links h1:hover {
+  background-color: #343646;
+  opacity: 0.7;
+  border-radius: 5px;
+}
+
+.noselect {
+  -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome and Opera */
 }
 
 .rippleDiv{
@@ -18,4 +59,36 @@
 .stars {
   position: absolute;
   z-index: 1;
+}
+
+
+#porfolioLinks {
+  overflow: auto
+}
+
+.image{
+  height: auto;
+  width: 100%;
+}
+
+.box-text{
+  color: white;
+  position: relative;
+  bottom: 0;
+  margin-bottom: -70px;
+  text-align: center;
+  line-height: 70px;
+  background-color: black;
+  text-decoration: none;
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity .2s, visibility .2s;
+}
+
+.image:hover .box-text{
+  visibility: visible;
+  opacity: 0.7;
 }
