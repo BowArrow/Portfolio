@@ -6,16 +6,6 @@ $(document).ready(function(){
         perturbance: 0.04
       });
 
-    // $("#page-links h1").mouseenter( function(){
-    //     $(this).css({
-            
-    //     }).mouseleave( function(){
-    //         $(this).css({
-                
-    //         })
-    //     })
-            
-    // })
 
 
 })
