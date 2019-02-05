@@ -11,10 +11,12 @@
   firebase.initializeApp(config);
 
   var database = firebase.database();
-  var portfolio = database.ref("/portfolio/")
+  var portfolio = database.ref("/portfolio/");
   var storage = firebase.storage();
   var storageRef = storage.ref();
-  var iconsRef = storage.ref("/icons/")
+  var iconsRef = storage.ref("/icons/");
+  var emailRef = database.ref("/emails/");
+  var aboutRef = database.ref("/aboutMe/");
 
   portfolio.on("child_added", function(snap){
     var key = snap.val();
@@ -31,6 +33,40 @@
     link.append(text);
     col.append(link);
     portDiv.append(col);
+  })
+
+  aboutRef.on("value", function(snap){
+    var key = snap.val();
+    var info = key.info;
+    console.log(info);
+    var sections = [$("#pastInfo"), $("#presentInfo"), $("#futureInfo")]
+    var infoArr = info.split("<br>");
+    for(var i = 0; i < sections.length; i++) {
+      sections[i].append(infoArr[i]);
+    }
+  })
+
+  $("#send").on("click", function(){
+    var name = $("#name").val();
+    var email = $("#email").val();
+    var subject = $("#subject").val();
+    var message = $("#message").val();
+
+    var emailKey = emailRef.push();
+      
+    emailRef.child(emailKey).set({
+      name: name,
+      email: email,
+      subject: subject,
+      message: message,
+      key: emailKey,
+      read: false
+    });
+      
+    name = "";
+    email = "";
+    subject = "";
+    message = "";
   })
 
   

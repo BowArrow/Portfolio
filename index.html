@@ -67,8 +67,9 @@
                     </div>
                     <div class="modal-body">
                         <div class="row">
-                            <div class="col-md-3" id=profileImage></div>
-                            <div class="col-md-9" id="pastInfo"></div>
+                            <div class="col-md-12">
+                                    <div id="profileImage"><img class="img-fluid pull-left mr-3" style="max-width: 200px;" src="https://scontent-sjc3-1.xx.fbcdn.net/v/t1.0-9/13124441_10208892409724513_4891793898311544514_n.jpg?_nc_cat=108&_nc_ht=scontent-sjc3-1.xx&oh=b063c3496e23c7d21ecb90001e53f89d&oe=5CFD1A17"><p id="pastInfo"></p></div>
+                            </div>
                         </div>
                         <div class="row">
                             <div class="col-md-12" id="presentInfo"></div>
@@ -96,7 +97,7 @@
             <div class="modal-dialog modal-lg" role="document">
                 <div class="modal-content" id="portModal">
                     <div class="modal-header">
-                        <h5 class="modal-title" id="portfolioLabel">Portfolio</h5>
+                        <h5 class="modal-title" id="portfolioLabel">Projects</h5>
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                             <span aria-hidden="true">&times;</span>
                         </button>
@@ -130,18 +131,17 @@
                                 hesitate to contact me directly. I will get back to you shortly to help you.</p>
                             <div class="row">
                                 <div class="col-md-9 mb-md-0 mb-5">
-                                    <form id="contact-form" name="contact-form" action="https://formspree.io/cshore51@hotmail.com"
-                                        method="POST">
+                                    <form id="contact-form" name="contact-form">
                                         <div class="row">
                                             <div class="col-md-6">
                                                 <div class="md-form mb-0">
-                                                    <input type="text" id="name" name="name" class="form-control">
+                                                    <input type="text" id="name" class="form-control">
                                                     <label for="name" class="">Your name</label>
                                                 </div>
                                             </div>
                                             <div class="col-md-6">
                                                 <div class="md-form mb-0">
-                                                    <input type="email" id="email" name="_replyto" class="form-control">
+                                                    <input type="email" id="email" class="form-control">
                                                     <label for="email" class="">Your email</label>
                                                 </div>
                                             </div>
@@ -149,7 +149,7 @@
                                         <div class="row">
                                             <div class="col-md-12">
                                                 <div class="md-form mb-0">
-                                                    <input type="text" id="subject" name="_subject" class="form-control">
+                                                    <input type="text" id="subject" class="form-control">
                                                     <label for="subject" class="">Subject</label>
                                                 </div>
                                             </div>
@@ -157,13 +157,13 @@
                                         <div class="row">
                                             <div class="col-md-12">
                                                 <div class="md-form">
-                                                    <textarea type="text" id="message" name="message" rows="2" class="form-control md-textarea"></textarea>
+                                                    <textarea type="text" id="message" rows="2" class="form-control md-textarea"></textarea>
                                                     <label for="message">Your message</label>
                                                 </div>
                                             </div>
                                         </div>
                                         <div class="text-center text-md-left">
-                                            <a class="btn btn-primary" type="submit" value="send">Send</a>
+                                            <a class="btn btn-primary" type="submit" id="send" value="send">Send</a>
                                         </div>
                                         <div class="status"></div>
                                     </form>
