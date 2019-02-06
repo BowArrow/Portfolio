@@ -5,16 +5,16 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
-    crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.5.14/css/mdb.css">
-    <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" href="assets/css/stars.css">
     <!-- Google Font -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css">
+    <!-- Bootstrap core CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.2.1/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Material Design Bootstrap -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.7.1/css/mdb.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/stars.css">
+    <link rel="stylesheet" href="assets/css/style.css">
 
     <title>Portfolio</title>
 </head>
@@ -55,7 +55,7 @@
             </div>
         </div>
 
-        <!-- Modal -->
+        <!-- About me -->
         <div class="modal fade" id="aboutModal" tabindex="-1" role="dialog" aria-labelledby="aboutLabel" aria-hidden="true">
             <div class="modal-dialog modal-lg" role="document">
                 <div class="modal-content">
@@ -68,7 +68,10 @@
                     <div class="modal-body">
                         <div class="row">
                             <div class="col-md-12">
-                                    <div id="profileImage"><img class="img-fluid pull-left mr-3" style="max-width: 200px;" src="https://scontent-sjc3-1.xx.fbcdn.net/v/t1.0-9/13124441_10208892409724513_4891793898311544514_n.jpg?_nc_cat=108&_nc_ht=scontent-sjc3-1.xx&oh=b063c3496e23c7d21ecb90001e53f89d&oe=5CFD1A17"><p id="pastInfo"></p></div>
+                                <div id="profileImage"><img class="img-fluid float-left mr-3" style="max-width: 200px;"
+                                        src="https://scontent-sjc3-1.xx.fbcdn.net/v/t1.0-9/13124441_10208892409724513_4891793898311544514_n.jpg?_nc_cat=108&_nc_ht=scontent-sjc3-1.xx&oh=b063c3496e23c7d21ecb90001e53f89d&oe=5CFD1A17">
+                                    <p id="pastInfo"></p>
+                                </div>
                             </div>
                         </div>
                         <div class="row">
@@ -81,9 +84,11 @@
                     <div class="modal-footer">
                         <div class="row">
                             <div class="col-md-12" style="color: white;">
-                                <a class="btn floated btn-md btn-indigo btn-rounded" href="#"><i class="fa fa-facebook"></i></a>
-                                <a class="btn floated btn-md btn-primary btn-rounded" href="https://www.linkedin.com/in/casey-shore-3a250a163/"><i class="fa fa-linkedin"></i></a>
-                                <a class="btn floated btn-md btn-dark btn-rounded" href="https://github.com/BowArrow"><i class="fa fa-github"></i></a>
+                                <a class="btn floated btn-md btn-indigo btn-rounded" href="#"><i class="fab fa-facebook-f"></i></a>
+                                <a class="btn floated btn-md btn-primary btn-rounded" href="https://www.linkedin.com/in/casey-shore-3a250a163/"><i
+                                        class="fab fa-linkedin-in"></i></a>
+                                <a class="btn floated btn-md btn-dark btn-rounded" href="https://github.com/BowArrow"><i
+                                        class="fab fa-github"></i></a>
                             </div>
                         </div>
                     </div>
@@ -91,7 +96,7 @@
             </div>
         </div>
 
-        <!-- Modal -->
+        <!-- Portfolio -->
         <div class="modal fade" id="portfolioModal" tabindex="-1" role="dialog" aria-labelledby="portfolioLabel"
             aria-hidden="true">
             <div class="modal-dialog modal-lg" role="document">
@@ -113,7 +118,7 @@
             </div>
         </div>
 
-        <!-- Modal -->
+        <!-- Contact -->
         <div class="modal fade" id="contactModal" tabindex="-1" role="dialog" aria-labelledby="contactLabel"
             aria-hidden="true">
             <div class="modal-dialog modal-lg" role="document">
@@ -193,23 +198,14 @@
     </div>
 
 
-    <!-- Dynamic page with animations -->
-    <!-- starting page will have "Enter Button" surrounded by interactive background -->
-
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-
-
-
-    <!-- jQuery JS -->
-
-
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
-        crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
-        crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.5.14/js/mdb.js"></script>
+    <!-- JQuery -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!-- Bootstrap tooltips -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.2.1/js/bootstrap.min.js"></script>
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.7.1/js/mdb.min.js"></script>
 
     <!--Firebase-->
     <script src="https://www.gstatic.com/firebasejs/5.5.7/firebase.js"></script>

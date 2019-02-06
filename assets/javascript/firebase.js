@@ -17,13 +17,15 @@
   var iconsRef = storage.ref("/icons/");
   var emailRef = database.ref("/emails/");
   var aboutRef = database.ref("/aboutMe/");
-
+  // <a class="btn-floating btn-sm btn-dark"><i class="fab fa-github"></i></a>
   portfolio.on("child_added", function(snap){
     var key = snap.val();
     var imgSrc;
     var portDiv = $("#porfolioLinks");
     var col = $("<div>").addClass("col-md-4 mt-4 image");
     var link = $("<a>").attr("href", key.link);
+    var gitLink = $("<a>").addClass("btn-floating btn-sm btn-rounded btn-dark gitBtn float-bottom float-left").attr("href", key.git)
+    var gitIcon = $("<i>").addClass("fab fa-github")
     iconsRef.child(key.icon).getDownloadURL().then(function(url){
       imgSrc = url;
       var img = $("<img>").addClass("img-fluid web").attr("src", imgSrc);
@@ -31,6 +33,8 @@
     });
     var text = $("<div>").addClass("box-text").text(key.title);
     link.append(text);
+    gitLink.append(gitIcon)
+    col.append(gitLink)
     col.append(link);
     portDiv.append(col);
   })
